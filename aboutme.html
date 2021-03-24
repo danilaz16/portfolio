@@ -9,6 +9,42 @@
 	<link rel="stylesheet" href="css/style.css">
 	<title>About Me</title>
 </head>
+<style>
+	.grid {
+		/*Grid Specific*/
+		  display: grid;
+		  grid-template-columns: auto auto;
+		  grid-gap: 10px;
+
+		  /*General Styline*/
+		  background-color: white;
+		  background-image: url('..images/marble.jpeg');
+		  /*I am using an image from the same folder. All images should be in the imgs folder.*/
+		  padding: 10px;
+		  width:auto;
+		  text-align: center;
+		  font-size: 30px;
+		  border: 3px solid black;
+		  color: white;
+		  border-radius: 25px;
+		  margin: 0 auto;
+	}
+
+
+	.grid > div {
+		  background-color: rgba(255, 255, 255, 0.8);
+		  text-align: center;
+		  padding: 20px;
+		  font-size: 30px;
+	}
+
+	h1, h2{
+		text-align: center;
+		margin: 10px;
+		font-size: 200%;
+
+	}
+</style>
 <body>
 	<header>
 		<span class="Dani">Dani Lazarus</span>
@@ -22,21 +58,39 @@
 	  </nav>
 	  <h1>About Me</h1>
 	</header>
-
-    <main>
-
-		<p>I am a Lecturer IV in the School of Information at the University of Michigan. I focus on the introductory programming courses such as Data-Oriented Programming (SI 206) and the Web Design Courses (SI 339 and SI 539).</p>
-
-		<p>My previous jobs include Associate Professor at <a href = "http://www.csulb.edu">California State University</a> and positions at NASA JPL, the Naval Research Lab, and the NSA. I received my BS from <a href = "http://www.kent.edu">Kent State University</a>Honors College in Computer Science, and an MS and PhD from the University of Pittsburgh, also in Computer Science. My thesis was on Artificial Intelligence applications on the Nursebot Project, a robotic assistant for the elderly.</p>
-	</main>
-	
-	
 	<main>
-	<p>In 2016 I loaded my kids into the minivan and took them on a drive across the Northern midwest states.  We went to Wisconsin Dells, the Badlands, Mount Rushmore, Jewel Cave, and Custer State Park.</p>
-		<img src = "imgs/wisconsin_dells.jpg" width="25" alt = "Wisconsin Dells"/>
-		<img src = "imgs/badlands.jpg" width="1000" alt = "Badlands"/>
-		<img src = "imgs/falling.jpg" width="25" alt = "Falling"/>
-		<img src = "imgs/jewel_cave.JPG" width="1000" alt = "Jewel Cave"/>
+		<style> ul {
+			list-style-position: inside;
+		  }</style>
+		<div class="grid">
+  			<div class="Education">
+				<h6>Education</h6>
+				<p>I am currently a sophomore at the University of Michigan, Ann Arbor. I am in the School of Information and intend to follow the Information Analytics path. I am also pursuing a minor in Computer Science.</p>
+			  </div>
+  			<div class="from">
+				<h6>Hometown</h6>
+				<p>I am from South Jersey (the greater Philadelphia area). I live an hour from the Jersey Shore and go there every summer with my family.</p>
+			  </div>
+  			<div class="free">
+				<h6>Interests</h6>
+				<p>
+					<ul>
+						<li>I play around with Adobe Photoshop in my free time.</li>
+						<li>All throughout highschool I ran cross country and track, so I am now a huge runner. Running long distance is my favorite but I love the occasional sprinting.</li>
+						<li>I am a big country fan! Country music is all that I listen to.</li>
+					</ul>
+				</p>
+			  </div>  
+  			<div class="foods">
+				  <h6>Favorite Foods</h6>
+				  <ul>
+					<li>Chicken parmesan is my favorite meal.</li>
+					<li>I am a sucker for anything that has oreos or bananas in it.</li>
+					<li>Vanilla is always preferred over chocolate (if I am being honest, I do not really like chocolate at all).</li>
+				</ul>
+
+			  </div>
+		</div>
 	</main>
 	<footer><p>Dani Lazarus &copy; 2021</p></footer>
 </body>
