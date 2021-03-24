@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!--  TIP 
+	You will find any errors from the head section using
+	the console. -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- <link rel="icon" href="imgs/favicon.ico"> -->
+	<link rel="shortcut icon" type="image/png" href="images/logo_icon.png"/>
+	<link rel="stylesheet" href="css/html5reset.css">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Travel</title>
+</head>
+<body>
+	<header>
+		<span class="Dani">Dani Lazarus</span>
+		<nav>
+			<ul>
+				<li><a href = "index.html">Home</a></li>
+				<li><a href = "aboutme.html">About Me</a></li>
+				<li><a href = "personal.html">Family</a></li>
+				<li><a href = "travel.html">Travel</a></li>
+			</ul>
+		</nav>
+		<h1>Travel</h1>
+	</header>
+	
+	<style>
+		html{height:100%; width:100%;}
+
+	.desc{
+		text-align: center;
+		color:white;
+  		font-weight: normal;
+  		width: auto;
+ 		margin: 0px;
+ 		visibility:hidden;
+	}
+
+	div:hover .desc {
+  		visibility:visible;
+	}
+	div.img{
+  		margin: 15px 5px 0px 0px;
+  		padding:5px;
+  		box-sizing:border-box;
+  		background-color:black;
+  		line-height:0px;
+  		height: auto;
+  		width: 20%;
+  		float: left;
+  		text-align: center;
+ 		border-radius:4px;
+	}	
+	div:hover{
+		line-height:30px;
+		font-size:16px;
+	}
+	div.img img{
+  		display: inline-block;
+  		margin: 3px;
+	}
+	</style>
+	<h3>I love travelling and dream of going to so many places around the world. Here are some of the places I have already been...</h3>
+	<main>  
+			<div class="img">
+			  <a target="_blank" href=""><img src="images/grand.jpg" alt="Grand" width= auto height=auto/></a>
+			 <div class="desc"> Grand Canyon</div>
+			</div>
+			<div class="img">
+			  <a target="_blank" href=""><img src="images/dead.JPG" alt="Dead" width="40" height=auto/></a>
+			 <div class="desc">Dead Sea</div>
+			</div>
+			<div class="img">
+			  <a target="_blank" href=""><img src="images/bridge.JPG" alt="Bridge" width="40" height=auto/></a>
+			 <div class="desc">Golden Gate Bridge</div>
+			</div>
+			<div class="img">
+			  <a target="_blank" href=""><img src="images/falls.JPG" alt="Falls" width="40" height=auto/></a>
+			 <div class="desc">Niagra Falls</div>
+			</div>
+	</main>
+	<footer>
+		<p>Dani Lazarus &copy; 2021</p>
+	</footer>
+</body>
+</html>
