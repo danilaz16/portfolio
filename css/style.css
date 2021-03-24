@@ -1,0 +1,226 @@
+html{
+	scroll-behavior: smooth;
+}
+
+/*Add padding and margin to space out the page.
+Make the font larger too.*/
+body{
+	margin:1%;
+	padding:1%;
+	font-size:150%;
+	background-image: url("../images/marble.jpeg");
+}
+.Dani {
+    display: inline-block;
+    line-height: 1;
+    max-width: 380px;
+    outline: none;
+    overflow: hidden;
+    padding: 16px 12px;
+    text-decoration: none;
+    text-overflow: ellipsis;
+}
+
+a:hover{
+	background-color: rgb(105, 105, 105);
+  }
+
+  nav a{
+	color: ivory;
+	font-weight: bold;
+	text-decoration: none;
+  
+  }
+  .skip a:focus{
+	position: absolute;
+	top: 10px;
+  }
+
+  
+/*Make the h1 heading bigger with a bold font*/
+h1{
+	line-height: 1;
+	font-size: 2em; 
+	font-weight: bold;
+	text-align: center;
+
+}
+nav li{
+  display:inline;
+  padding-right:20px;
+
+}
+
+
+h1.family{
+	color: blue;
+}
+
+/*Make the h2 heading match h1*/
+h2{
+	font-size: 2em; 
+	font-weight: bold;
+	line-height: 1.5;
+}
+h1 {
+    padding-bottom: 44px;
+    padding-left: 56px;
+    padding-right: 56px;
+    padding-top: 44px;
+}
+
+/*Add borders around the main components and some
+space too*/
+nav, main, footer{
+	margin: 10px 0;
+	display: inline;
+}
+
+
+.container{
+	/*Your Code Here*/
+	display: grid;
+	grid-template-columns: 1fr 3fr 3fr 1fr;
+	grid-template-rows: auto auto auto auto;
+	grid-row-gap: 20px;
+  }
+
+
+header{
+	background-attachment: fixed; /* Parallax effect */     
+	background-position: center;  /* Parallax effect */
+	background-repeat: no-repeat; /* Parallax effect */
+	background-size: cover;       /* Parallax effect */
+	color: white;
+	height: 200px;                /* Parallax effect */
+	  
+	/*Req 6a*/
+	/*Set margin */
+	margin-bottom: 25px;
+	  
+	/*Req 6b*/
+	/*Set background-image to header.jpg */
+	background-color: rgba(56, 56, 56, 0.8);
+  
+}
+
+  
+  /*Req 9*/
+  .text{
+	background-color: rgba(255, 255, 255, .8);
+	border: 10px solid black;
+	padding: 30px;
+	/*Your code here:*/
+	align-self: center;
+  
+  }
+  
+  
+  @media all and (min-width: 880px){
+	  
+	img{
+	   width:100%;
+	}
+	  
+	/*Req 10*/
+	nav{
+	  padding: 30px 0px;
+	  /*Your code here:*/
+	  vertical-align: center;
+	  text-align: right;
+	}
+
+  }
+@media all and (min-width: 880px){
+    
+	img{
+	   width:100%;
+	}
+	  
+	/*Req 10*/
+	nav{
+	  padding: 30px 0px;
+	  /*Your code here:*/
+	  text-align: center;
+	}
+  
+	/*Req 11*/
+	.container{
+	  /*Your code here:*/
+	  display: grid;
+	  grid-template-columns: 50px auto 500px auto 50px;
+	  grid-template-rows: 400px 425px 425px 400px;
+  
+	}
+  
+  }
+/*Change the styling for all of the list 
+items in the nav section*/
+nav li{
+	background-color: transparent;
+	padding:10px;
+	width:25%;
+	border:5px solid white;
+	flex: center;
+	width: 20%;
+}
+
+
+
+/*Added this so the links stay the same color*/
+a:visited{columns: #ffffff;}
+
+nav{
+    padding: 30px 0px;
+    /*Your code here:*/
+    vertical-align: center;
+    text-align: right;
+  }
+  .skip a{
+	background: white;
+	left: 0;
+	padding: 7px;
+	-webkit-transition: top 1s ease-out;
+	transition: top 1s ease-out;
+	z-index: 1;
+  
+	/*Your code here*/
+	position: absolute;
+	top: -50px;
+  }
+  /*Req 3b*/
+  /*Write selector/rule property to position the skip class element*/
+  .skip a:focus{
+	position: absolute;
+	top: 10px;
+  }
+
+@media (min-width: 880px){
+	nav {
+    	padding: 30px 0px;
+    	vertical-align: center;
+    	text-align: right;
+	}
+}
+
+div.gallery {
+	margin: 5px;
+	border: 3px solid black;
+	float: left;
+	width: 180px;
+	font-size: 12px;
+  }
+  
+  div.gallery:hover {
+	border: 1px solid #777;
+  }
+  
+  div.gallery img {
+	width: 100%;
+	height: auto;
+  }
+  
+  div.desc {
+	padding: 15px;
+	text-align: center;
+  }
