@@ -34,13 +34,11 @@
 		color:white;
   		font-weight: normal;
   		width: auto;
- 		margin: 0px;
- 		visibility:hidden;
+		margin: 0px;
+		visibility: hidden;
 	}
 
-	div:hover .desc {
-  		visibility:visible;
-	}
+	
 	div.img{
   		margin: 15px 5px 0px 0px;
   		padding:5px;
@@ -53,20 +51,35 @@
   		text-align: center;
  		border-radius:4px;
 	}	
-	div:hover{
-		line-height:30px;
-		font-size:16px;
-	}
+	
 	div.img img{
   		display: inline-block;
   		margin: 3px;
 	}
+	@media all and (min-width: 880px){
+		div:hover{
+			line-height:30px;
+			font-size:16px;
+		}
+		div:hover .desc {
+  			visibility:visible;
+		}
+	}
+	@media (max-width: 880px) {
+		.desc{
+			visibility:visible;
+			font-size: 12px;
+			white-space: pre;
+			text-align: center;
+		}
+	}
 	</style>
 	<h3>I love travelling and dream of going to so many places around the world. Here are some of the places I have already been...</h3>
 	<main>  
+		<div class="flex-container">
 			<div class="img">
-			  <a target="_blank" href=""><img src="images/grand.jpg" alt="Grand" width= auto height=auto/></a>
-			 <div class="desc"> Grand Canyon</div>
+			  <a target="_blank" href=""><img src="images/grand.jpg" alt="Grand" width= "40" height=auto/></a>
+			 <div class="desc">Grand Canyon</div>
 			</div>
 			<div class="img">
 			  <a target="_blank" href=""><img src="images/dead.JPG" alt="Dead" width="40" height=auto/></a>
@@ -74,12 +87,13 @@
 			</div>
 			<div class="img">
 			  <a target="_blank" href=""><img src="images/bridge.JPG" alt="Bridge" width="40" height=auto/></a>
-			 <div class="desc">Golden Gate Bridge</div>
+			 <div class="desc">San Francisco</div>
 			</div>
 			<div class="img">
 			  <a target="_blank" href=""><img src="images/falls.JPG" alt="Falls" width="40" height=auto/></a>
 			 <div class="desc">Niagra Falls</div>
 			</div>
+		</div>
 	</main>
 	<footer>
 		<p>Dani Lazarus &copy; 2021</p>

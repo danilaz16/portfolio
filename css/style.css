@@ -58,14 +58,8 @@ h1{
 	font-weight: bold;
 	text-align: center;
 	color:black;
-}
-
-.lazarus{
-	line-height: 1;
-	font-size: 2em; 
-	font-weight: bold;
-	text-align: center;
-	color:white;
+	white-space: pre-line;
+	border-bottom: 5px dotted black;
 }
 
 nav li{
@@ -191,6 +185,13 @@ div.desc {
 	padding: 10px;
 	text-align: center;
 }
+
+.flex-container {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+  }
   
 
 @media all and (min-width: 880px){
@@ -211,21 +212,19 @@ div.desc {
 	  grid-template-rows: 400px 425px 425px 400px;
   
 	}
+	
   }
 
 a:visited{columns: #000000;}
 
-@media (min-width: 880px) {
-	.wrapper {
-	  grid-template-columns: 1fr 4fr 1fr;
-	  grid-template-areas:
-		"header header  header"
-		"nav    content sidebar"
-		"nav    content ad"
-		"footer footer  footer"
-	 }
+@media (max-width: 880px) {
 	 nav ul {
 	   flex-direction: column;
 	 }
+	 .flex-container {
+		flex-direction: column;
+	  }
+
+	 
   }
 
