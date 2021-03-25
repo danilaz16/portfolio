@@ -3,24 +3,22 @@ html{
 }
 .Education{
 	grid-column: 1/2;
-	background-image: url("../images/maize.jpeg");
-	color:black;
+	background-image: url("../images/blackwood.jpeg");
 }
 
 .free{
 	grid-column: 1/2;
-	background-image: url("../images/pink.jpeg");
+	background-image: url("../images/blackwood.jpeg");
 	
 }
 .from {
 	grid-column: 2/3;
-	background-image: url("../images/green.jpg");
+	background-image: url("../images/blackwood.jpeg");
 }
 
 .foods{
 	grid-column: 2/3;
-	background-image: url("../images/lime.jpg");
-	color: black;
+	background-image: url("../images/blackwood.jpeg");
 }
 
 h3{
@@ -33,6 +31,9 @@ body{
 	font-size:150%;
 	background-image: url("../images/marble.jpeg");
 	background-repeat: repeat;
+	min-height: 400px;
+   	margin-bottom: 100px;
+   	clear: both;
 }
 .Dani {
     display: inline-block;
@@ -81,7 +82,7 @@ nav a{
 }
   
 nav a:hover, a:focus{
-	text-decoration: underline;
+	border: double;
 }
   
 nav .current{
@@ -136,7 +137,8 @@ footer{
 	bottom: 0;
 	position: fixed;
 	width: 100%;
-  	left: 0;
+	left: 0;
+	justify-content: center;
 
 }
 
@@ -144,17 +146,6 @@ nav, main{
 	margin: 10px 0;
 	display: inline;
 }
-
-/* header{
-	background-attachment: fixed; 
-	background-position: center;  
-	background-repeat: no-repeat; 
-	background-size: cover;       
-	color: white;
-	height: 200px;                
-	margin-bottom: 25px;
-	background-color: rgba(56, 56, 56, 0.8);
-} */
 
 .text{
 	background-color: rgba(0, 0, 0, 0.8);
@@ -169,7 +160,7 @@ div.gallery {
 	float: left;
 	width: 180px;
 	font-size: 12px;
-	padding-bottom: 25px;
+	padding-bottom: 15px;
 }
   
 div.gallery:hover {
