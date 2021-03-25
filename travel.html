@@ -15,14 +15,16 @@
 <body>
 	<header>
 		<span class="Dani">Dani Lazarus</span>
+		<div class="navi">
 		<nav>
 			<ul>
 				<li><a href = "index.html">Home</a></li>
 				<li><a href = "aboutme.html">About Me</a></li>
 				<li><a href = "personal.html">Family</a></li>
-				<li><a href = "travel.html">Travel</a></li>
+				<li class="selected"><a href = "travel.html">Travel</a></li>
 			</ul>
 		</nav>
+	</div>
 		<h1>Travel</h1>
 	</header>
 	
@@ -57,18 +59,18 @@
   		margin: 3px;
 	}
 	@media all and (min-width: 880px){
-		div:hover{
+		.flex-container:hover{
 			line-height:30px;
 			font-size:16px;
 		}
-		div:hover .desc {
+		.flex-container:hover .desc {
   			visibility:visible;
 		}
 	}
 	@media (max-width: 880px) {
 		.desc{
 			visibility:visible;
-			font-size: 12px;
+			font-size: 10px;
 			white-space: pre;
 			text-align: center;
 		}

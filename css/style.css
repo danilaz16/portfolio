@@ -68,7 +68,7 @@ nav li{
 }
   
 nav{
-	background-color: rgb(0, 0, 0);
+	background-color: transparent;
 	padding: 25px 0; 
 	text-align: right;
 }
@@ -193,7 +193,15 @@ div.desc {
 	align-items: center;
   }
   
+.navi{
+	display: flex;
+	  justify-content: center;
+	align-items: center;
+}
 
+.selected{
+	border: double;
+}
 @media all and (min-width: 880px){
     
 	img{
@@ -213,6 +221,7 @@ div.desc {
   
 	}
 	
+	
   }
 
 a:visited{columns: #000000;}
@@ -221,10 +230,9 @@ a:visited{columns: #000000;}
 	 nav ul {
 	   flex-direction: column;
 	 }
-	 .flex-container {
-		flex-direction: column;
-	  }
-
+	 .navi{
+		font-size: 12px;
+	}
 	 
   }
 
