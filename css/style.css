@@ -98,6 +98,10 @@ nav .current{
 	position: absolute;
 	top: -50px;
 }
+.skip a:focus{
+	position: absolute;
+	top: 10px;
+  }
 
 nav li{
 	background-color: transparent;

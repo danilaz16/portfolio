@@ -18,7 +18,7 @@
 
 		  /*General Styline*/
 		  background-color: white;
-		  background-image: url('..images/marble.jpeg');
+		  background-image: url('../Portfolio/images/marble.jpeg');
 		  /*I am using an image from the same folder. All images should be in the imgs folder.*/
 		  padding: 10px;
 		  width:auto;
@@ -47,11 +47,18 @@
 	}
 	@media (max-width: 880px) {
 		.grid > div{
-			font-size: 12px;
+			font-size: 24px;
+		}
+	}
+
+	@media (max-width: 650px) {
+		.grid > div{
+			font-size: 18px;
 		}
 	}
 </style>
 <body>
+	<div class="skip"><a href="#main">Skip to Main Content</a></div>
 	<header>
 		<span class="Dani">Dani Lazarus</span>
 		<div class="navi">
@@ -64,7 +71,7 @@
 		</ul>
 	  </nav>
 	</div>
-	  <h1>About Me</h1>
+	  <h1 id = "main">About Me</h1>
 	</header>
 	<main>
 		<style> ul {
