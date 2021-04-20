@@ -9,7 +9,57 @@
 	<link rel="stylesheet" href="css/style.css">
 	<title>Dani Lazarus</title>
 </head>
+<style>
+	.wrapper {
+		display: flex;
+		min-width: 50px;
+		grid-gap: 20px; 
+		color: black;
+		margin-bottom: 30px;
+	}			
 
+	.box {
+		align-self: center;
+		background-color: black;
+		color: #fff;
+		border-radius: 5px;
+		border: 20px double;
+		padding: 15px;
+		font-size: 150%;
+		
+	}
+
+	body{
+		margin: 40px;
+		text-align: center;
+		margin: auto;
+		
+		
+	}
+  
+	.box.a, .box.c, .box.b, .box.d {
+		height: auto;
+		font-size: 16px;
+		line-height: 1.5;
+		display: flex;
+  		justify-content: center;
+ 		align-items: center;
+	}
+
+	.box.d {
+		width: 36%;
+	}
+	
+
+
+	@media (max-width: 880px) {
+		.wrapper{
+			display: flex;
+			flex-direction: column;
+		}
+		
+	}
+</style>
 <main>
 <body>
 	<div id = "content-start" class="skip"><a href="#main">Skip to Main Content</a></div>
@@ -25,6 +75,7 @@
 				<li><a href = "aboutme.html">About Me</a></li>
 				<li><a href = "personal.html">Family</a></li>
 				<li><a href = "travel.html">Travel</a></li>
+				<li><a href = "contact.html">Contact Me!</a></li>
 			</ul>
 		</nav>
 		</div>
@@ -33,6 +84,12 @@
 			Lazarus</h1>
 
 	</header>
+	<div class="wrapper">
+		<div class="box a">Welcome to my personal website! Click through the pages to learn more about me! To get started...here are a few things to know about me.</div>
+		<div class="box b">Favorite Phrase: "Mind over matter"</div>
+		<div class="box c">I love trying new things, so go to my contact page and please give me suggestions!</div>
+		<div class="box d">Fear: Scary Things <br> Love: Being Scared</div>
+	  </div>
 
 	
 

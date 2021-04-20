@@ -31,6 +31,15 @@ body{
    	margin-bottom: 100px;
    	clear: both;
 }
+
+/* The animation code */
+@keyframes example {
+	0%   {background-color: rgb(255, 0, 149);}
+  25%  {background-color: black;}
+  50%  {background-color: blue;}
+ 100% {background-color: blueviolet;}
+  }
+
 .Dani {
     display: inline-block;
     line-height: 1;
@@ -38,8 +47,13 @@ body{
     overflow: hidden;
     padding: 16px 12px;
 	text-overflow: ellipsis;
-	background-color: black;
 	color: white;
+	background-color: black;
+	animation-name: namechange;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	animation-timing-function: ease;
 }
 h1{
 	line-height: 1;
@@ -134,7 +148,7 @@ h1 {
 footer{
 	background-color: black;
 	color: white;
-	padding-top: 30px;
+	padding-top: 10px;
 	text-align: center;
 	bottom: 0;
 	position: fixed;
@@ -215,12 +229,13 @@ div.desc {
 	  vertical-align: center;
 	}
   
-	.container{
+	/* .container{
 	  display: grid;
 	  grid-template-columns: 50px auto 500px auto 50px;
 	  grid-template-rows: 400px 425px 425px 400px;
   
-	}
+	} */
+	
 	
 	
   }
@@ -234,6 +249,29 @@ a:visited{columns: #000000;}
 	 .navi{
 		font-size: 12px;
 	}
+
+	.Dani{
+		-webkit-transition: none; /* sets to default setting */
+		transition: none;        /* sets to default setting */
+	   }
+	   .parallax {
+		background-attachment: inherit;
+	  }
 	 
   }
 
+@media screen and (prefers-reduced-motion: reduce){
+	html{
+		scroll-behavior: auto; /* Removes scroll animation */
+	}
+  
+	.Dani{
+	  -webkit-transition: none; /* sets to default setting */
+	  transition: none;        /* sets to default setting */
+	 }
+  
+	/*Turn off parallax*/
+	header{
+	  background-attachment: initial;
+	}
+  }
