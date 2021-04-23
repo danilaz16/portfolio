@@ -1,0 +1,502 @@
+html{
+	scroll-behavior: smooth;
+}
+.Education{
+	grid-column: 1/2;
+}
+
+.free{
+	grid-column: 1/2;
+	
+}
+.from {
+	grid-column: 2/3;
+}
+
+.foods{
+	grid-column: 2/3;
+}
+
+h3{
+	text-align: center;
+}
+
+body{
+	margin:1%;
+	padding:1%;
+	font-size:150%;
+	background-image: url("../images/marble.jpeg");
+	background-repeat: repeat;
+	min-height: 400px;
+   	margin-bottom: 100px;
+   	clear: both;
+}
+
+/* The animation code */
+@keyframes namechange {
+	0%   {background-color: rgb(255, 0, 149);}
+  25%  {background-color: black;}
+  50%  {background-color: blue;}
+ 100% {background-color: blueviolet;}
+  }
+
+.Dani {
+    display: inline-block;
+    line-height: 1;
+    max-width: 380px;
+    overflow: hidden;
+    padding: 16px 12px;
+	text-overflow: ellipsis;
+	color: white;
+	background-color: black;
+	animation-name: namechange;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	animation-timing-function: ease;
+}
+h1{
+	line-height: 1;
+	font-size: 2em; 
+	font-weight: bold;
+	text-align: center;
+	color:white;
+	background-color: black;
+}
+
+.dani{
+	line-height: 1;
+	font-size: 2em; 
+	font-weight: bold;
+	text-align: center;
+	color:white;
+	overflow: hidden;
+	background-color: black;
+	white-space: pre-line;
+	border-bottom: 5px dotted black;
+}
+
+nav li{
+	display:inline;
+	padding-right:20px;
+}
+  
+nav{
+	background-color: black;
+	padding: 25px 0; 
+	text-align: right;
+}
+  
+nav a{
+	color:white;
+	font-weight: bold;
+	text-decoration: none;
+  
+}
+  
+nav a:hover, a:focus{
+	border: double;
+}
+  
+nav .current{
+	color: rgb(0, 0, 0);
+}
+
+.skip a{
+	background: rgb(0, 0, 0);
+	left: 0;
+	padding: 7px;
+	-webkit-transition: top 1s ease-out;
+	transition: top 1s ease-out;
+	z-index: 1;
+	position: absolute;
+	top: -50px;
+}
+.skip a:focus{
+	position: absolute;
+	top: 10px;
+  }
+
+nav li{
+	background-color: transparent;
+	padding:10px;
+	width:25%;
+	flex: center;
+	width: 20%;
+}
+  
+h1.family{
+	color: blue;
+}
+
+h2{
+	font-size: 2em; 
+	font-weight: bold;
+	line-height: 1.5;
+}
+h1 {
+    padding-bottom: 44px;
+    padding-left: 56px;
+    padding-right: 56px;
+    padding-top: 44px;
+}
+  
+#content-wrap {
+	padding-bottom: 2.5rem;    
+}
+
+footer{
+	background-color: black;
+	color: white;
+	padding-top: 10px;
+	text-align: center;
+	bottom: 0;
+	position: fixed;
+	width: 100%;
+	left: 0;
+	justify-content: center;
+
+}
+
+nav, main{
+	margin: 10px 0;
+	display: inline;
+}
+
+.text{
+	background-color: rgba(0, 0, 0, 0.8);
+	border: 10px solid black;
+	padding: 30px;
+	align-self: center;
+}
+
+div.gallery {
+	margin: 5px;
+	border: 3px solid black;
+	float: left;
+	width: 180px;
+	font-size: 12px;
+	padding-bottom: 2px;
+}
+  
+div.gallery:hover {
+	border: 1px solid #777;
+}
+  
+div.gallery img {
+	width: 100%;
+	height: auto;
+}
+
+.gallery:nth-child(odd) > .desc{
+	color:black;
+	background-color: white;
+}
+.gallery:nth-child(even) > .desc{
+	color:white;
+	background-color: black;
+}
+div.desc {
+	padding: 5px;
+	text-align: center;
+}
+
+.flex-container {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+  }
+  
+.navi{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.selected{
+	border:5px double white;
+}
+
+.wrapper {
+	display: flex;
+	min-width: 50px;
+	grid-gap: 20px; 
+	color: black;
+	margin-bottom: 30px;
+}			
+
+.box {
+	align-self: center;
+	background-color: black;
+	color: #fff;
+	border-radius: 5px;
+	border: 20px double;
+	padding: 15px;
+	font-size: 150%;
+	
+}
+
+.index_body{
+	margin: 40px;
+	text-align: center;
+	margin: auto;
+	padding-bottom: 100px;
+	
+}
+
+.box.a, .box.c, .box.b, .box.d {
+	height: auto;
+	font-size: 16px;
+	line-height: 1.5;
+	display: flex;
+	  justify-content: center;
+	 align-items: center;
+}
+
+.box.d {
+	width: 36%;
+}
+
+
+
+
+
+input[type=text], select, textarea {
+	width: auto;
+	padding: 12px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: 20px;
+	margin-top: 6px;
+	margin-bottom: 16px;
+	margin-left: auto;
+	margin-right: auto;
+	resize: vertical horizontal;
+	align-items: center;
+	display: block;
+
+}
+
+input[type=submit] {
+	background-color: white;
+	color: black;
+	padding: 12px 20px;
+	border: black double;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+input[type=submit]:hover {
+	background-color: black;
+	color: white;
+}
+
+.container_contact{
+
+	border-radius: 5px;
+	background-color: red;
+	padding: 20px;
+	background-attachment: fixed;   
+	background-position: center; 
+	background-repeat: no-repeat; 
+	background-size: cover;       
+	color: white;
+	height: 620px;                
+	margin-bottom: 25px;   
+	background-image: url("../images/blackwood.jpeg");
+	text-align: center;
+	justify-content: center;
+	align-self: center;
+
+}
+
+
+a:visited{columns: #000000;}
+
+.grid {
+	  display: grid;
+	  grid-template-columns: auto auto;
+	  grid-gap: 10px;
+	  background-color: white;
+	  background-image: url('../Portfolio/images/marble.jpeg');
+	  padding: 10px;
+	  width:auto;
+	  text-align: center;
+	  font-size: 30px;
+	  border: 3px solid black;
+	  color: white;
+	  border-radius: 25px;
+	  margin: 0 auto;
+}
+
+.grid > div {
+	  background-color: black;
+	  text-align: center;
+	  padding: 20px;
+	  font-size: 30px;
+}
+
+h1, h2{
+	text-align: center;
+	margin: 10px;
+	font-size: 200%;
+	color: white;
+
+}
+
+html{height:100%; width:100%;}
+
+.desc{
+	text-align: center;
+	color:white;
+	font-weight: normal;
+	width: auto;
+	margin: 0px;
+}
+.travel_h2{
+	color:white;
+	background-color: black;
+	font-size: 20px;
+	text-align: center;
+}
+
+.flip-card {
+	background-color: transparent;
+	width: 300px;
+	height: 200px;
+	border: 1px solid #f1f1f1;
+	text-align: center;
+	justify-content: center;
+	align-self: center;
+
+  }
+  
+  .flip-card-inner {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	transition: transform 0.8s;
+	transform-style: preserve-3d;
+  }
+  
+  .flip-card:hover .flip-card-inner {
+	transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+  }
+  
+  .flip-card-front {
+	background-color: black;
+	color: white;
+	border: 10px double;
+  }
+  
+  .flip-card-back {
+	background-color: black;
+	border: 10px double;
+	color: white;
+	transform: rotateY(180deg);
+  }
+
+div.img{
+	  margin: 15px 20px 0px 0px;
+	  padding: 15px;
+	  background-color:black;
+	  line-height:0px;
+	  height: auto;
+	  width: 60%;
+	  text-align: center;
+	border-radius: 4px;
+}	
+
+div.img img{
+	  margin-bottom: 10px;
+}
+
+.flex-container {
+	margin-bottom: 50px;
+}
+
+@media (max-width: 650px) {
+	.grid > div{
+		font-size: 18px;
+	}
+}
+
+@media all and (min-width: 880px){
+    
+	img{
+	   width:100%;
+	}
+
+	nav{
+	  padding: 30px 0px;
+	  text-align: right;
+	  vertical-align: center;
+	}
+	
+  }
+
+@media (max-width: 880px) {
+	 nav ul {
+	   flex-direction: column;
+	 }
+	 .navi{
+		font-size: 12px;
+	}
+
+	.wrapper{
+		display: flex;
+		flex-direction: column;
+	}
+
+	.desc{
+		font-size: 16px;
+		margin-left: 20px;
+	}
+	div.img{
+		margin: 10px 10px 0px 0px;
+	}
+
+	div.img img{
+		margin-bottom: 10px;
+	}
+
+	.Dani{
+		-webkit-transition: none; 
+		transition: none;      
+	   }
+	   .parallax {
+		background-attachment: inherit;
+	  }
+
+	  .grid > div{
+		font-size: 24px;
+	}
+	 
+  }
+
+@media screen and (prefers-reduced-motion: reduce){
+	html{
+		scroll-behavior: auto;
+	}
+  
+	.Dani{
+	  animation: none;
+	 }
+	.container{
+		background-attachment: scroll;
+	}
+
+	.flip-card{
+		animation: none;
+	}
+  }
